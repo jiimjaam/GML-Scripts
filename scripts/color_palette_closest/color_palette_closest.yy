@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"color_palette_closest",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"color_palette_closest",
+  "parent":{
+    "name":"Colors",
+    "path":"folders/Scripts/Colors.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"color_palette",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"color_palette",
+  "parent":{
+    "name":"Colors",
+    "path":"folders/Scripts/Colors.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

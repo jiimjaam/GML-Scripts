@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"string_capitalize",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"string_capitalize",
+  "parent":{
+    "name":"Strings",
+    "path":"folders/Scripts/Strings.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"date_get_utc_offset",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"date_get_utc_offset",
+  "parent":{
+    "name":"Time",
+    "path":"folders/Scripts/Time.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"px_to_pt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"px_to_pt",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Scripts/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

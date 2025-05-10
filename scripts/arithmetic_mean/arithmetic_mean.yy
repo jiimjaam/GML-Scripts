@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"arithmetic_mean",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"arithmetic_mean",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Scripts/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

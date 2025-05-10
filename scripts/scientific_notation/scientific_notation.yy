@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scientific_notation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scientific_notation",
+  "parent":{
+    "name":"Strings",
+    "path":"folders/Scripts/Strings.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
