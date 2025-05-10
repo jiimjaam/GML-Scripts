@@ -50,6 +50,7 @@
     {"id":{"name":"is_odd","path":"scripts/is_odd/is_odd.yy",},},
     {"id":{"name":"pt_to_px","path":"scripts/pt_to_px/pt_to_px.yy",},},
     {"id":{"name":"px_to_pt","path":"scripts/px_to_pt/px_to_pt.yy",},},
+    {"id":{"name":"round_to_nearest","path":"scripts/round_to_nearest/round_to_nearest.yy",},},
     {"id":{"name":"scientific_notation","path":"scripts/scientific_notation/scientific_notation.yy",},},
     {"id":{"name":"string_capitalize","path":"scripts/string_capitalize/string_capitalize.yy",},},
     {"id":{"name":"string_format_separator","path":"scripts/string_format_separator/string_format_separator.yy",},},

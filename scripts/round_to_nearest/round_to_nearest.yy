@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"round_to_nearest",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"round_to_nearest",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Scripts/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
