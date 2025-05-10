@@ -10,7 +10,12 @@
 
 function scientific_notation(n, min_exponent = 9)
 {
-	if (is_infinity(n))
+	if (!is_real(n))
+	{
+		return string(NaN);
+	}
+	// special case for infinity
+	else if (is_infinity(n))
 	{
 		return string(infinity);
 	}
