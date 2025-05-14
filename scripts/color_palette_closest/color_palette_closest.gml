@@ -15,16 +15,37 @@ function color_palette_closest(color, palette)
 
 	// Initialize loop through palette array
 	var nearest = palette[0];
-	var nearest_delta = abs(color_get_hue(color) - color_get_hue(nearest));
+	var hue_delta = abs(color_get_hue(color) - color_get_hue(nearest));
+	var sat_delta = abs(color_get_saturation(color) - color_get_saturation(nearest));
+	var val_delta = abs(color_get_value(color) - color_get_value(nearest));
 
 	// Loop through palette array to find closest color
 	for (var i = 1; i < len; ++i)
 	{
-		var d = abs(color_get_hue(color) - color_get_hue(palette[i]));
-		if (d < nearest_delta)
+		var h = abs(color_get_hue(color) - color_get_hue(palette[i])),
+			s = abs(color_get_saturation(color) - color_get_saturation(palette[i])),
+			v = abs(color_get_value(color) - color_get_value(palette[i]));
+		
+		if (h < hue_delta)
 		{
-			nearest_delta = d;
+			hue_delta = h;
 			nearest = palette[i];
+		}
+		else if (h == hue_delta)
+		{
+			if (v < val_delta)
+			{
+				val_delta = v;
+				nearest = palette[i];
+			}
+			else if (v == val_delta)
+			{
+				if (s < sat_delta)
+				{
+					sat_delta = s;
+					nearest = palette[i];
+				}
+			}
 		}
 	}
 
