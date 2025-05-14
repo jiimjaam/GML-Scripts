@@ -38,14 +38,6 @@ function color_palette_closest(color, palette)
 				val_delta = v;
 				nearest = palette[i];
 			}
-			else if (v == val_delta)
-			{
-				if (s < sat_delta)
-				{
-					sat_delta = s;
-					nearest = palette[i];
-				}
-			}
 		}
 	}
 
