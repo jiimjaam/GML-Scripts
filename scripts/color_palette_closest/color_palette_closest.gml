@@ -1,5 +1,5 @@
 /**
-@desc		Returns the closest color to the provided color in the provided palette
+@desc		Returns the closest color to the provided color in the provided palette (measured by hue)
 
 @param		{Constant.Color}			color		The color to compare
 @param		{Array<Constant.Color>}		palette		The palette to use for comparing
@@ -15,12 +15,12 @@ function color_palette_closest(color, palette)
 
 	// Initialize loop through palette array
 	var nearest = palette[0];
-	var nearest_delta = sqrt ( sqr(abs(color_get_red(color) - color_get_red(palette[0]))) + sqr(abs(color_get_green(color) - color_get_green(palette[0]))) + sqr(abs(color_get_blue(color) - color_get_blue(palette[0]))) );
+	var nearest_delta = abs(color_get_hue(color) - color_get_hue(nearest));
 
 	// Loop through palette array to find closest color
 	for (var i = 1; i < len; ++i)
 	{
-		var d = sqrt ( sqr(abs(color_get_red(color) - color_get_red(palette[i]))) + sqr(abs(color_get_green(color) - color_get_green(palette[i]))) + sqr(abs(color_get_blue(color) - color_get_blue(palette[i]))) );
+		var d = abs(color_get_hue(color) - color_get_hue(palette[i]));
 		if (d < nearest_delta)
 		{
 			nearest_delta = d;
