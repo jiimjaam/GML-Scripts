@@ -1,5 +1,5 @@
 /**
-@desc		Returns the UTC offset (in seconds) of the local timezone
+@desc		Returns the UTC offset (in hours) of the local timezone
 
 @return		{Real}
 @pure

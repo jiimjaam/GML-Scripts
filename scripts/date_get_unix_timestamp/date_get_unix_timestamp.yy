@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"date_get_unix_timestamp",
   "parent":{
-    "name":"Time",
-    "path":"folders/Scripts/Time.yy",
+    "name":"Date & Time",
+    "path":"folders/Scripts/Date & Time.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
