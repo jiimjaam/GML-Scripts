@@ -1,5 +1,5 @@
 /**
-@desc		Returns the arithmetic mean of the provided set of real numbers
+@desc		Returns the arithmetic mean of the provided array of real numbers
 
 @param		{Array<Real>}		set
 

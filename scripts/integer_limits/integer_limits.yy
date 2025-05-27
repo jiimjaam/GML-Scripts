@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"is_even",
+  "%Name":"integer_limits",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"is_even",
+  "name":"integer_limits",
   "parent":{
-    "name":"Boolean",
-    "path":"folders/Scripts/Math/Boolean.yy",
+    "name":"Constants",
+    "path":"folders/Scripts/Math/Constants.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"arithmetic_mean",
   "parent":{
-    "name":"Math",
-    "path":"folders/Scripts/Math.yy",
+    "name":"Arithmetic",
+    "path":"folders/Scripts/Math/Arithmetic.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

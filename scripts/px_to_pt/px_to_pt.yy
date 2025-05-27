@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"px_to_pt",
   "parent":{
-    "name":"Math",
-    "path":"folders/Scripts/Math.yy",
+    "name":"Unit Conversions",
+    "path":"folders/Scripts/Math/Unit Conversions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

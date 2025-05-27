@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"is_int",
   "parent":{
-    "name":"Math",
-    "path":"folders/Scripts/Math.yy",
+    "name":"Boolean",
+    "path":"folders/Scripts/Math/Boolean.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
