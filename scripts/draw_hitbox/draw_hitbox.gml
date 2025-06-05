@@ -1,14 +1,14 @@
 /**
 @desc		Draws the bounding box of a given instance to screen
 
-@param		{Id.Instance}			inst		The instance to draw the bounding box of
+@param		{Id.Instance}			[inst]		The instance to draw the bounding box of. Optional, defaults to self
 @param		{Constant.Colour}		[color]		The color to draw the bounding box with. Optional, defaults to green (#00FF00)
-@param		{Real}					[alpha]		The alpha to draw the bounding box with
+@param		{Real}					[alpha]		The alpha to draw the bounding box with. Optional, defaults to 1
 
 @return		{Undefined}
 */
 
-function draw_hitbox(inst, color = #00FF00, alpha = 1)
+function draw_hitbox(inst = self, color = #00FF00, alpha = 1)
 {
 	
 	var left = inst.bbox_left,
