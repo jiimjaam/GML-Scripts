@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"draw_hitbox",
   "parent":{
-    "name":"Instances",
-    "path":"folders/Scripts/Instances.yy",
+    "name":"Objects & Instances",
+    "path":"folders/Scripts/Objects & Instances.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
