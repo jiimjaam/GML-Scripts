@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"draw_text_box",
+  "%Name":"string_box",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"draw_text_box",
+  "name":"string_box",
   "parent":{
     "name":"Strings",
     "path":"folders/Scripts/Strings.yy",

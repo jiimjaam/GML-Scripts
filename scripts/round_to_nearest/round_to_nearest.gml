@@ -1,8 +1,9 @@
 /**
 @desc		Rounds a number to the nearest multiple of a number
 
-@param		{Real}		x		The number to round
-@param		{Real}		n		The nearest multiple to find
+@param		{Real}				x			The number to round
+@param		{Real}				n			The nearest multiple to find
+@param		{Real}		[dir]		The direction to round: -1 = floor, 0 = round, 1 = ceil (Default: 0)
 
 @return		{Real}
 @pure
@@ -17,7 +18,17 @@
 // 
 /////////////////////////
 
-function round_to_nearest(x, n)
+function round_to_nearest(x, n, dir = 0)
 {
-	return (round(x / n) * n);
+	switch (dir)
+	{
+		case -1:
+			return (floor(x / n) * n);
+		
+		case 0:
+			return (round(x / n) * n);
+		
+		case 1:
+			return (ceil(x / n) * n);
+	}
 }
