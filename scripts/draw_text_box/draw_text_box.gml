@@ -5,15 +5,16 @@
 @param		{Real}			y						The y coordinate of the drawn ASCII box
 @param		{String}		string					The string to be drawn
 @param		{Real}			[margin]				The margin (in number of whitespaces) to draw the box with (Default: 0)
+@param		{Bool}			[double]				Whether to draw the string with a single-lined (false) or double-lined (true) border (Default: false)
 @param		{Real}			[background_alpha]		The alpha transparency of the ASCII box's background (Default: 1)
 
 @return		{Undefined}
 */
 
-function draw_text_box(_x, _y, _string, _margin = 0, _background_alpha = 1)
+function draw_text_box(_x, _y, _string, _margin = 0, _double = false, _background_alpha = 1)
 {
 	// convert input string to ASCII box string
-	var str_box = string_box(_string, _margin);
+	var str_box = string_box(_string, _margin, _double);
 	// get currently set draw vars
 	var prev_color = draw_get_color();
 	var prev_alpha = draw_get_alpha();
