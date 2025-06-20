@@ -1,14 +1,20 @@
 /**
 @desc		Returns the given string with an ASCII box around it
 
-@param		{String}		string			The string to be converted
+@param		{String}		string			The string to be converted into an ASCII box
 @param		{Real}			[margin]		The margin (in number of whitespaces) to draw the box with (Default: 0)
 
 @return		{String}
+@pure
 */
 
 function string_box(_string, _margin = 0)
 {
+	if (!is_string(_string))
+	{
+		_string = string(_string);	
+	}
+	
 	// split string in case of any linebreaks
 	var strs = string_split(_string, "\n", false);
 	var result_str = "";
