@@ -3,7 +3,7 @@
 
 @param		{String}		string			The string to be converted into an ASCII box
 @param		{Real}			[margin]		The margin (in number of whitespaces) to draw the box with (Default: 0)
-@param		{Bool}			[double]		Whether to draw the string with a single-lined (false) or double-lined (true) border (Default: false)
+@param		{Bool}			[double]		Whether to return the string with a single-lined (false) or double-lined (true) border (Default: false)
 
 @return		{String}
 @pure
