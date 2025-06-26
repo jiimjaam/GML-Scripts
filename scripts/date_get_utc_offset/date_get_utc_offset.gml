@@ -7,6 +7,7 @@
 
 function date_get_utc_offset()
 {
+	// get previous timezone
 	var prev_timezone = date_get_timezone();
 	
 	// get datetime values
@@ -32,11 +33,14 @@ function date_get_utc_offset()
 	};
 	
 	// compare datetime values to get offset
-	date_set_timezone(prev_timezone);
-	var utc_datetime = date_create_datetime(utc_values.year, utc_values.month, utc_values.day, utc_values.hour, utc_values.minute, utc_values.second);
-	var local_datetime = date_create_datetime(local_values.year, local_values.month, local_values.day, local_values.hour, local_values.minute, local_values.second);
+	date_set_timezone(timezone_utc);
+	var utc_datetime = date_create_datetime(utc_values.year, utc_values.month, utc_values.day, utc_values.hour, utc_values.minute, utc_values.second),
+		local_datetime = date_create_datetime(local_values.year, local_values.month, local_values.day, local_values.hour, local_values.minute, local_values.second);
 	var minute_span = date_compare_datetime(local_datetime, utc_datetime) * round(date_minute_span(local_datetime, utc_datetime));
 	
-	// return UTC offset
+	// return to previous timezone setting
+	date_set_timezone(prev_timezone);
+	
+	// return UTC offset (in minutes / 60 to account for timezones with half-hour offsets)
 	return (minute_span / 60);
 }
