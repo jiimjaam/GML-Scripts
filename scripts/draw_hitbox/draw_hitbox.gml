@@ -10,13 +10,22 @@
 
 function draw_hitbox(inst = self, color = #00FF00, alpha = 1)
 {
+	// get previous draw settings
+	var prev_color = draw_get_color(),
+		prev_alpha = draw_get_alpha();
 	
+	// define hitbox bounds
 	var left = inst.bbox_left,
 		top = inst.bbox_top,
 		right = inst.bbox_right - 1,
 		bottom = inst.bbox_bottom - 1;
-		
+	
+	// draw hitbox
 	draw_set_color(color);
 	draw_set_alpha(alpha);
 	draw_rectangle(left, top, right, bottom, true);
+	
+	// return to previous draw settings
+	draw_set_color(prev_color);
+	draw_set_alpha(prev_alpha);
 }
