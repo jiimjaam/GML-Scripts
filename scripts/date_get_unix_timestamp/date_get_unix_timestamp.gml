@@ -15,7 +15,7 @@ function date_get_unix_timestamp(datetime = date_current_datetime())
 	// set timezone to UTC (if it's not already)
 	if (prev_timezone != timezone_utc)
 	{
-		datetime = date_inc_minute(datetime, -date_get_utc_offset() * 60);
+		//datetime = date_inc_minute(datetime, -date_get_utc_offset() * 60);
 		date_set_timezone(timezone_utc);
 	}
 	
