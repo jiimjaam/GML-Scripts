@@ -5,9 +5,9 @@
 @pure
 */
 
-#macro				WEB_SAFE_COLORS				16_777_215
+#macro				WEB_SAFE_COLORS				16_777_216
 
 function color_random()
 {
-	return irandom_range(0, WEB_SAFE_COLORS);
+	return irandom_range(0, WEB_SAFE_COLORS - 1);
 }
