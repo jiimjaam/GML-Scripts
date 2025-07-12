@@ -55,6 +55,8 @@
     {"id":{"name":"draw_hitbox","path":"scripts/draw_hitbox/draw_hitbox.yy",},},
     {"id":{"name":"draw_text_box","path":"scripts/draw_text_box/draw_text_box.yy",},},
     {"id":{"name":"factorial","path":"scripts/factorial/factorial.yy",},},
+    {"id":{"name":"instance_at_position","path":"scripts/instance_at_position/instance_at_position.yy",},},
+    {"id":{"name":"instance_exists_at_position","path":"scripts/instance_exists_at_position/instance_exists_at_position.yy",},},
     {"id":{"name":"integer_limits","path":"scripts/integer_limits/integer_limits.yy",},},
     {"id":{"name":"is_even","path":"scripts/is_even/is_even.yy",},},
     {"id":{"name":"is_int","path":"scripts/is_int/is_int.yy",},},
