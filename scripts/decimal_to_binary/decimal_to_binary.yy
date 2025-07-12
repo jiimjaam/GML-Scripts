@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"decimal_to_binary",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"decimal_to_binary",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Scripts/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
