@@ -45,6 +45,7 @@
   },
   "name":"GML-Scripts",
   "resources":[
+    {"id":{"name":"test","path":"rooms/test/test.yy",},},
     {"id":{"name":"arithmetic_mean","path":"scripts/arithmetic_mean/arithmetic_mean.yy",},},
     {"id":{"name":"color_palette_closest","path":"scripts/color_palette_closest/color_palette_closest.yy",},},
     {"id":{"name":"color_palette","path":"scripts/color_palette/color_palette.yy",},},
@@ -75,7 +76,9 @@
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
-  "RoomOrderNodes":[],
+  "RoomOrderNodes":[
+    {"roomId":{"name":"test","path":"rooms/test/test.yy",},},
+  ],
   "templateType":"game",
   "TextureGroups":[
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},

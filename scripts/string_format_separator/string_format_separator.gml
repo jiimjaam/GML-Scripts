@@ -25,7 +25,7 @@ function string_format_separator(n, separator = ",", digits_in_period = 3, decim
 	    str = string_char_at(int, i) + str;
 	    if (cnt++ == digits && i > 1)
 	    {
-	        cnt = 1;
+	        cnt = 0;
 	        str = separator + str;
 	    }
 	}
