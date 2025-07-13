@@ -6,6 +6,7 @@
 @param		{Real}		[z]
 
 @return		{Struct.Vector3}
+@pure
 */
 
 function Vector3(_x = 0, _y = 0, _z = 0) : Vector2(_x, _y) constructor

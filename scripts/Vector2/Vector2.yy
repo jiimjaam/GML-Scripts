@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Vector2",
   "parent":{
-    "name":"Vectors",
-    "path":"folders/Scripts/Math/Vectors.yy",
+    "name":"Constructors",
+    "path":"folders/Scripts/Math/Vectors/Constructors.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

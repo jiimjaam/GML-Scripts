@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Vector4",
+  "%Name":"MooreNeighborhood",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Vector4",
+  "name":"MooreNeighborhood",
   "parent":{
-    "name":"Constructors",
-    "path":"folders/Scripts/Math/Vectors/Constructors.yy",
+    "name":"Vectors",
+    "path":"folders/Scripts/Math/Vectors.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
