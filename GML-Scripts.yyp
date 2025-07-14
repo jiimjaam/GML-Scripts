@@ -54,6 +54,7 @@
     {"id":{"name":"date_get_unix_timestamp","path":"scripts/date_get_unix_timestamp/date_get_unix_timestamp.yy",},},
     {"id":{"name":"date_get_utc_offset","path":"scripts/date_get_utc_offset/date_get_utc_offset.yy",},},
     {"id":{"name":"decimal_to_binary","path":"scripts/decimal_to_binary/decimal_to_binary.yy",},},
+    {"id":{"name":"decimal_to_hexadecimal","path":"scripts/decimal_to_hexadecimal/decimal_to_hexadecimal.yy",},},
     {"id":{"name":"draw_hitbox","path":"scripts/draw_hitbox/draw_hitbox.yy",},},
     {"id":{"name":"draw_text_box_transformed","path":"scripts/draw_text_box_transformed/draw_text_box_transformed.yy",},},
     {"id":{"name":"draw_text_box","path":"scripts/draw_text_box/draw_text_box.yy",},},
