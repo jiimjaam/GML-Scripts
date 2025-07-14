@@ -78,6 +78,7 @@
     {"id":{"name":"Vector3","path":"scripts/Vector3/Vector3.yy",},},
     {"id":{"name":"Vector4","path":"scripts/Vector4/Vector4.yy",},},
     {"id":{"name":"VonNeumannNeighborhood","path":"scripts/VonNeumannNeighborhood/VonNeumannNeighborhood.yy",},},
+    {"id":{"name":"sprCP437","path":"sprites/sprCP437/sprCP437.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
