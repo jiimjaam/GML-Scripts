@@ -30,12 +30,8 @@ function scientific_notation(n, min_exponent = 9, capitalized = true)
 	}
 	else
 	{
-		var e_str = "";
-		if (capitalized)
-		{
-			e_str = "E";
-		}
-		else
+		var e_str = "E";
+		if (!capitalized)
 		{
 			e_str = "e";
 		}
