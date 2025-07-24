@@ -11,7 +11,7 @@
 
 function scientific_notation(n, min_exponent = 9, capitalized = true)
 {
-	if (!is_real(n))
+	if (!is_real(n) && !is_int64(n))
 	{
 		return string(NaN);
 	}
