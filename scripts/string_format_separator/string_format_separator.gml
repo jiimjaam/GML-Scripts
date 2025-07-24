@@ -42,8 +42,13 @@ function string_format_separator(n, separator = ",", digits_in_period = 3, decim
 			{
 				frc = string_delete(frc, string_length(frc), 1);
 			}
+			
+			// truncate decimal point if needed
+			if (string_char_at(frc, string_length(frc)) != ".")
+			{
+				str += string_delete(frc, 1, 1); // delete leading zero from decimal number
+			}
 		}
-		str += string_delete(frc, 1, 1); // delete leading zero from decimal number
 	}
 	
 	return str;
