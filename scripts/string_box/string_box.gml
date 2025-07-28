@@ -1,9 +1,9 @@
 /**
 @desc		Returns the given string with an ASCII box around it
 
-@param		{String}		string			The string to be converted into an ASCII box
-@param		{Real}			[margin]		The margin (in number of whitespaces) to draw the box with (Default: 0)
-@param		{Bool}			[double]		Whether to return the string with a single-lined (false) or double-lined (true) border (Default: false)
+@param		{Any}		string			The string to be converted into an ASCII box
+@param		{Real}		[margin]		The margin (in number of whitespaces) to draw the box with (Default: 0)
+@param		{Bool}		[double]		Whether to return the string with a single-lined (false) or double-lined (true) border (Default: false)
 
 @return		{String}
 @pure
@@ -52,18 +52,19 @@ function string_box(_string, _margin = 0, _double = false)
 	// define box string
 	// top border
 	result_str += left_top + string_repeat(horizontal, box_w) + right_top + "\n";
-	// 
+	// top margin
 	repeat(_margin)
 	{
 		result_str += vertical + string_repeat(" ", box_w) + vertical + "\n";
 	}
-	// loop
+	// loop through string lines
 	for (var i = 0; i < array_length(strs); ++i)
 	{
 		var line = strs[i];
 		var right_margin = str_w - string_length(line);
 		result_str += vertical + string_repeat(" ", _margin) + line + string_repeat(" ", right_margin) + string_repeat(" ", _margin) + vertical + "\n";
 	}
+	// bottom margin
 	repeat(_margin)
 	{
 		result_str += vertical + string_repeat(" ", box_w) + vertical + "\n";

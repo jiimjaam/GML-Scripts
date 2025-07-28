@@ -3,7 +3,7 @@
 
 @param		{Real}					x						The x coordinate of the drawn ASCII box
 @param		{Real}					y						The y coordinate of the drawn ASCII box
-@param		{String}				string					The string to be drawn
+@param		{Any}					string					The string to be drawn
 @param		{Real}					[margin]				The margin (in number of whitespaces) to draw the box with (Default: 0)
 @param		{Bool}					[double]				Whether to draw the string with a single-lined (false) or double-lined (true) border (Default: false)
 @param		{Real}					[background_alpha]		The alpha transparency of the ASCII box's background (Default: 1)

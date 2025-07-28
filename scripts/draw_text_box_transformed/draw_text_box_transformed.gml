@@ -3,7 +3,7 @@
 
 @param		{Real}					x						The x coordinate of the drawn ASCII box
 @param		{Real}					y						The y coordinate of the drawn ASCII box
-@param		{String}				string					The string to be drawn
+@param		{Any}					string					The string to be drawn
 @param		{Real}					xscale					The horizontal scale of the box (Default: 1)
 @param		{Real}					yscale					The vertical scale of the box (Default: 1)
 @param		{Real}					angle					The angle of the box
