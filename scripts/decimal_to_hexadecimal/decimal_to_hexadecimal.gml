@@ -71,15 +71,16 @@ function decimal_to_hexadecimal(n, prefix = false)
 		str = string_reverse(str);
 	}
 	
+	if (prefix)
+	{
+		str = "0x" + str;	
+	}
+	
 	// signed behavior
 	if (_sign == -1)
 	{
 		str = "-" + str;
 	}
 	
-	if (prefix)
-	{
-		str = "0x" + str;	
-	}
 	return str;
 }

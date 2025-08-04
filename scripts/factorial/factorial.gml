@@ -12,7 +12,7 @@ function factorial(n)
 	switch (sign(n))
 	{
 		case -1:
-			return undefined;
+			return infinity;
 			
 		case 0:
 			return 1;

@@ -17,6 +17,10 @@ function VonNeumannNeighborhood(_x = 0, _y = 0) constructor
 			_x = ceil(_x);
 			break;
 		
+		case 0:
+			_x = 0;
+			break;
+		
 		case 1:
 			_x = floor(_x);
 			break;
@@ -25,6 +29,10 @@ function VonNeumannNeighborhood(_x = 0, _y = 0) constructor
 	{
 		case -1:
 			_y = ceil(_y);
+			break;
+		
+		case 0:
+			_y = 0;
 			break;
 		
 		case 1:
