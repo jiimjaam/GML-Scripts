@@ -1,11 +1,11 @@
 /**
 @desc		Converts a Real into a String with separator characters inserted
 
-@param		{Real}			n						Number to format
-@param		{String}		[separator]				Character(s) used to format the number
-@param		{Real.Int}		[digits_in_period]		Number of digits in each period
-@param		{Real.Int}		[decimal_places]		Number of decimal places to display
-@param		{Bool}			[clean_decimals]		Remove trailing zeroes from decimal string (true by default)
+@param		{Real}			n						The number to format
+@param		{String}		[separator]				The character(s) used to format the number
+@param		{Real.Int}		[digits_in_period]		The number of digits in each period
+@param		{Real.Int}		[decimal_places]		The number of decimal places to display
+@param		{Bool}			[clean_decimals]		Whether to remove trailing zeroes from decimal string. Default: true
 
 @return		{String}
 @pure
@@ -16,9 +16,9 @@ function string_format_separator(n, separator = ",", digits_in_period = 3, decim
 	// integer places
 	var int = string(floor(n));
 	var digits = digits_in_period - 1;
-	
+	// define string for storing final result
 	var str = "";
-
+	// loop through integer string and add separators
 	var cnt = 0;
 	for (var i = string_length(int); i > 0; --i)
 	{
@@ -29,12 +29,11 @@ function string_format_separator(n, separator = ",", digits_in_period = 3, decim
 	        str = separator + str;
 	    }
 	}
-
 	// decimal places
 	if (!is_int(n))
 	{
+		// define fraction string
 		var frc = string_format(frac(n), 0, decimal_places);
-		
 		// clean trailing zeroes from decimal number
 		if (clean_decimals)
 		{
@@ -51,5 +50,5 @@ function string_format_separator(n, separator = ",", digits_in_period = 3, decim
 		}
 	}
 	
-	return str;
+	return (str);
 }

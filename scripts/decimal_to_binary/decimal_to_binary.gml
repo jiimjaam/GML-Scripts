@@ -33,13 +33,13 @@ function decimal_to_binary(n, prefix = false)
 			// get LSB of n
 			var bit = n & 1;
 			// add LSB value to final string
-			str += string(bit);
+			str = string(bit) + str;
 			// right-shift n by 1 to remove current LSB
 			n = n >> 1;
 		}
 		
-		// reverse binary string to get final absolute binary value
-		str = "0" + string_reverse(str);
+		// add two's complement prefix
+		str = "0" + str;
 		
 		// signed behavior
 		if (_sign == -1)
