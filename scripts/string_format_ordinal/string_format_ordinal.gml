@@ -1,7 +1,7 @@
 /**
 @desc		Returns the ordinal form of a given integer (i.e. 1 -> 1st, 2 -> 2nd, 3 -> 3rd...)
 
-@param		{Real}		n		The number to format
+@param		{Real.Int}		n		The number to format
 
 @return		{String}
 @pure
