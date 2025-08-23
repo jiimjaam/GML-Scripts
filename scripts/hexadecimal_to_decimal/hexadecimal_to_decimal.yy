@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"hexadecimal_to_decimal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"hexadecimal_to_decimal",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Scripts/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
