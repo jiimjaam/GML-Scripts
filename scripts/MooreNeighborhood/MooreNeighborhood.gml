@@ -8,46 +8,11 @@
 @pure
 */
 
-function MooreNeighborhood(_x = 0, _y = 0) constructor
+function MooreNeighborhood(_x = 0, _y = 0) : VonNeumannNeighborhood(_x, _y) constructor
 {
-	// round x and y values to get integer values for coordinates
-	switch (sign(_x))
-	{
-		case -1:
-			_x = ceil(_x);
-			break;
-		
-		case 0:
-			_x = 0;
-			break;
-		
-		case 1:
-			_x = floor(_x);
-			break;
-	}
-	switch (sign(_y))
-	{
-		case -1:
-			_y = ceil(_y);
-			break;
-		
-		case 0:
-			_y = 0;
-			break;
-		
-		case 1:
-			_y = floor(_y);
-			break;
-	}
-	
 	// define Moore neighborhood
-	nw	= new Vector2(	_x - 1	,	_y - 1	);
-	n	= new Vector2(	_x		,	_y - 1	);
-	ne	= new Vector2(	_x + 1	,	_y - 1	);
-	w	= new Vector2(	_x - 1	,	_y		);
-	c	= new Vector2(	_x		,	_y		);
-	e	= new Vector2(	_x + 1	,	_y		);
-	sw	= new Vector2(	_x - 1	,	_y + 1	);
-	s	= new Vector2(	_x		,	_y + 1	);
-	se	= new Vector2(	_x + 1	,	_y + 1	);
+	nw	= new Vector2(	c.x - 1	,	c.y - 1	);
+	ne	= new Vector2(	c.x + 1	,	c.y - 1	);
+	sw	= new Vector2(	c.x - 1	,	c.y + 1	);
+	se	= new Vector2(	c.x + 1	,	c.y + 1	);
 }
